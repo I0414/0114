@@ -1,3 +1,22 @@
-.index-title {
-  font-size: 100px;
+header:first-of-type {
+  @include bg-img('../../../assets/images/w3/home-header-sm.png', auto);
+  // background: url('../../../assets/images/w3/home-header-sm.png');
+  background-attachment: fixed;
+  @include mobile {
+  }
+  @include pad {
+    @include bg-img('../../../assets/images/w3/home-header.png', auto);
+    // background-image: url('../../../assets/images/w3/home-header.png');
+  }
+}
+
+section:nth-of-type(3) {
+  background: url('../../../assets/images/w3/index-bg-sm.png');
+  background-attachment: fixed;
+  @include pad {
+    background: url('../../../assets/images/w3/index-bg-md.png');
+  }
+  @include pc {
+    background: url('../../../assets/images/w3/index-bg.png');
+  }
 }
