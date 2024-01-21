@@ -1,11 +1,14 @@
+@import '../utils/mixin';
+
 header:first-of-type {
-  @include bg-img('../images/w3/home-header-sm.png', auto);
+  @include bg-img('/assets/images/w3/home-header-sm.png', auto);
+  // ('../images/w3/home-header-sm.png', auto)
   // background: url('../../../assets/images/w3/home-header-sm.png');
   background-attachment: fixed;
   @include mobile {
   }
   @include pad {
-    @include bg-img('../images/w3/home-header.png', auto);
+    @include bg-img('/assets/images/w3/home-header.png', auto);
     // background-image: url('../../../assets/images/w3/home-header.png');
   }
 }

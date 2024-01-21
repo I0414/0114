@@ -1,3 +1,5 @@
+import '../scss/pages/_index.scss'
+
 const blueBox = document.querySelector(".blueBox")
 
 gsap.to(blueBox, {

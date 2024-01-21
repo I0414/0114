@@ -15,6 +15,8 @@ function moveOutputPlugin() {
     async generateBundle(options, bundle) {
       for (const fileName in bundle) {
         if (fileName.startsWith('pages/')) {
+          // const newFileName = 'w3/' + fileName.slice('pages/'.length);
+          // bundle[fileName].fileName = newFileName;
           const newFileName = fileName.slice('pages/'.length);
           bundle[fileName].fileName = newFileName;
         }
